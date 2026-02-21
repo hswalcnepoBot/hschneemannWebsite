@@ -60,9 +60,15 @@
       border-bottom:1px solid var(--line);
     }
 
-    .brand { display:flex; gap:12px; align-items:center; text-decoration:none; }
+    .brand {
+      display:flex;
+      gap:12px;
+      align-items:center;
+      text-decoration:none;
+    }
 
-    .dot {
+    .brand::before {
+      content:"";
       width:12px;
       height:12px;
       border-radius:999px;
