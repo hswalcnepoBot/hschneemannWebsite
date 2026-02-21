@@ -1,96 +1,572 @@
-ik-<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montageservice Savci</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>Montageservice Savci</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#about">Über uns</a></li>
-                    <li><a href="#services">Dienstleistungen</a></li>
-                    <li><a href="#testimonials">Kundenmeinungen</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h2>Ihr zuverlässiger Partner für den Küchenaufbau</h2>
-            <p>Kompetent, effizient und immer zur Stelle.</p>
-            <a href="#contact" class="btn">Kontaktieren Sie uns</a>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Über uns</h2>
-            <p>Montageservice Savci ist ein erfahrenes Unternehmen, das sich auf den Aufbau und die Montage von Küchen spezialisiert hat. Mit jahrelanger Erfahrung und einem Auge fürs Detail sorgen wir dafür, dass Ihre Küche perfekt aufgebaut wird.</p>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Unsere Dienstleistungen</h2>
-            <div class="service-list">
-                <div class="service">
-                    <h3>Küchenmontage</h3>
-                    <p>Wir bieten umfassende Dienstleistungen rund um den Aufbau und die Installation von Küchenmöbeln und -geräten.</p>
-                </div>
-                <div class="service">
-                    <h3>Beratung</h3>
-                    <p>Unsere Experten beraten Sie umfassend, um die beste Lösung für Ihre Küche zu finden.</p>
-                </div>
-                <div class="service">
-                    <h3>Wartung und Reparatur</h3>
-                    <p>Wir bieten auch Wartungs- und Reparaturdienste für Ihre Küche an, um sicherzustellen, dass sie immer in bestem Zustand bleibt.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>Kundenmeinungen</h2>
-            <div class="testimonial-list">
-                <div class="testimonial">
-                    <p>"Montageservice Savci hat meine Küche schnell und effizient aufgebaut. Ich bin sehr zufrieden mit dem Ergebnis!"</p>
-                    <p><strong>- Maria Müller</strong></p>
-                </div>
-                <div class="testimonial">
-                    <p>"Die Beratung und der Service waren erstklassig. Ich kann Montageservice Savci nur empfehlen!"</p>
-                    <p><strong>- Thomas Schmidt</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Kontaktieren Sie uns</h2>
-            <form id="myForm" action="send_email.php" method="post">
-                <label for="name">Name:</label>
-                  <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label>
-                  <input type="email" id="email" name="email"><br><br>
-                <label for="message">Message:</label>
-                  <textarea id="message" name="message"></textarea><br><br>
-                <input type="submit" value="Send Email">
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Montageservice Savci. Alle Rechte vorbehalten.</p>
-        </div>
-    </footer>
+<p class="p1">&lt;!doctype html&gt;</p>
+<p class="p1">&lt;html lang="de"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Hendrik Schneemann – Fachinformatiker für Anwendungsentwicklung. iOS (Swift/SwiftUI/UIKit), PHP/Symfony, modulare Architekturen, Kotlin Multiplatform-Anbindung." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Hendrik Schneemann · Entwickler&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg:#0b1220;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card:#111a2e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--muted:#9fb0d0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text:#e9efff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent:#6ee7ff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent2:#a78bfa;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--line:rgba(255,255,255,.10);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--shadow: 0 20px 60px rgba(0,0,0,.35);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--max: 1080px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html,body{height:100%}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin:0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family:var(--sans);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(1200px 600px at 10% 10%, rgba(110,231,255,.16), transparent 60%),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(1000px 500px at 90% 20%, rgba(167,139,250,.18), transparent 55%),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(900px 600px at 40% 95%, rgba(34,197,94,.08), transparent 55%),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>var(--bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height:1.55;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a{color:inherit}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 64px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>header{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex; align-items:center; justify-content:space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position:sticky; top:0; z-index:10;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:14px 18px; margin:-28px -18px 22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(11,18,32,.66);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(10px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom:1px solid var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex; gap:12px; align-items:center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration:none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dot{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width:12px; height:12px; border-radius:999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, var(--accent), var(--accent2));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow:0 0 0 6px rgba(110,231,255,.10);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand b{letter-spacing:.2px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav{display:flex; gap:14px; flex-wrap:wrap}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration:none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:8px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color:var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.04);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1.2fr .8fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap:18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items:stretch;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top:8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 860px){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(17,26,46,.72);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow:hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.pad{padding:22px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.kicker{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:inline-flex; gap:10px; align-items:center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family:var(--mono);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size:12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing:.3px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin:0 0 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.pill{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:4px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.04);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin:6px 0 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(28px, 4vw, 44px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height:1.12;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing:-.6px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.lead{color:var(--muted); font-size:16px; margin:0 0 18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:inline-flex; align-items:center; gap:10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:10px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration:none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.05);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn.primary{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: rgba(110,231,255,.35);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, rgba(110,231,255,.18), rgba(167,139,250,.14));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover{transform:translateY(-1px)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mini{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap:10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top:14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 520px){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.mini{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mini .box{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.03);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mini .box b{display:block; font-family:var(--mono); font-size:12px; color:var(--muted); margin-bottom:6px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mini .box span{font-size:14px}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>section{margin-top:18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap:18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 860px){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.grid{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h2{margin:0 0 10px; font-size:18px; letter-spacing:.1px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.muted{color:var(--muted)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family:var(--mono);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size:12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:6px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.03);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.list{display:flex; flex-direction:column; gap:10px; margin-top:10px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.03);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item .top{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items:baseline;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item .title{font-weight:700}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item .meta{font-family:var(--mono); font-size:12px; color:var(--muted)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item ul{margin:10px 0 0 18px; color:var(--muted)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top:24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top:18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-top:1px solid var(--line);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size:13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* little highlight line */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hl{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(90deg, rgba(110,231,255,.24), rgba(167,139,250,.22));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:0 .3em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:.35em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="brand" href="#top" aria-label="Zur Startseite"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="dot" aria-hidden="true"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;b&gt;Hendrik Schneemann&lt;/b&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#about"&gt;Über mich&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#projects"&gt;Projekte&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#experience"&gt;Werdegang&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#skills"&gt;Skills&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#contact"&gt;Kontakt&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main id="top" class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="kicker"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="pill"&gt;Fachinformatiker · Anwendungsentwicklung&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="pill"&gt;iOS · SwiftUI · UIKit&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Ich baue &lt;span class="hl"&gt;performante Apps&lt;/span&gt; und saubere Backends –</p>
+<p class="p1"><span class="Apple-converted-space">            </span>modular, wartbar, produktionsnah.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="lead"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Schwerpunkt: iOS-Entwicklung mit Swift/SwiftUI/UIKit, modulare Architektur mit Swift Package Manager,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>plus Backend-Erfahrung mit PHP/Symfony und SQL. (Kotlin Multiplatform Anbindung vorhanden.)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="cta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn primary" href="#projects"&gt;Projekte ansehen&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="#contact"&gt;Kontakt&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Optional: hier dein Linktree/Portfolio/LinkedIn/GitHub-Profil eintragen --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="#" id="appsLink" rel="noopener"&gt;App-Links (Linktree)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mini" aria-label="Schnellinfos"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;b&gt;Aktuell&lt;/b&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;CityApp (iOS, SwiftUI) · Teamkoordination&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;b&gt;Standort&lt;/b&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;Braunschweig (DE)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;aside class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Profil&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="muted" style="margin-top:6px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Ich entwickle Softwarelösungen im Kundenauftrag – von Konzept bis Release. Mir sind</p>
+<p class="p1"><span class="Apple-converted-space">            </span>klare Strukturen, stabile Build-Pipelines und gute Diagnostik (Crash/Logging) wichtig.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tags" aria-label="Schwerpunkte"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;Swift&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;SwiftUI&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;UIKit&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;Xcode&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;SPM&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;MV / MVVM / MVC&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;PHP&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;Symfony&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;SQL&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;Git · GitLab · Bitbucket&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;Jira · Confluence&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;Sentry&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="list" style="margin-top:14px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Highlights&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;Aus Projekten&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Apps mit zusammen &amp;gt; 25.000 Downloads (u.a. Müllapp, CityApp, Baumapp).&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Modulare iOS-Projekte via Swift Package Manager.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Kotlin Multiplatform Anbindung (lesen/integrieren).&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/aside&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about" class="grid" aria-label="Über mich"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Über mich&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="muted"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Ich bin Fachinformatiker für Anwendungsentwicklung und arbeite seit 2019 als Entwickler.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Mein Fokus liegt auf iOS-Apps – von der Konzeption bis zur Umsetzung, gern mit modularer Architektur.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Zusätzlich bringe ich Erfahrung im Backend (PHP/Symfony) und SQL mit.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Was du von mir bekommst&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Produktdenken&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;Konzept → Release&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="muted"&gt;Ich arbeite gerne end-to-end: UI/UX-Konzept, Implementation, Stabilität, Monitoring.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Saubere Struktur&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;Wartbar &amp; testbar&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="muted"&gt;MVVM/MVC, klare Module, solide Abhängigkeiten (SPM), nachvollziehbare Patterns.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="projects" aria-label="Projekte"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Ausgewählte Projekte&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="muted"&gt;Ein paar Stationen aus meinen Projekten (Details/Links kannst du später ergänzen):&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;CityApp&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2024 – heute · ~14.000 Downloads&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Koordination des App-Teams&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;iOS-Konzeption &amp; Entwicklung mit SwiftUI (Swift)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Modularer Aufbau mit Swift Package Manager&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Anbindung an Kotlin Multiplatform&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;App zum Vergleichen von Dönerpreisen&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;02/2025 – 09/2025&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;iOS-Konzeption &amp; Entwicklung mit SwiftUI (Swift)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Modularer Aufbau mit Swift Package Manager&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Anbindung an Kotlin Multiplatform&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Müllapp&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2018 – 2020 · ~10.000 Downloads&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;App/Backend-Konzeption&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;iPhone-App (UIKit, Swift)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Backend-Entwicklung (PHP)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Baumapp&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2020 · ~1.500 Downloads&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;App-Konzeption&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;iPhone-App (SwiftUI, Swift)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;NetAtVisionApp&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2021 – 2022&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;iPadOS-App-Konzeption&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Entwicklung mit SwiftUI (Swift)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Prozessunterstützung für Landwirte (Web)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2022 – 2023&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Webseite zur Automatisierung von Verwaltungsprozessen&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Backend-Entwicklung (PHP)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Pflegeinformationssystem (Web)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2017 – 2019&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Web-/Backend-Entwicklung (PHP)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Informationen rund um Leben &amp; Wohnen im Alter&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;App für Fahrradleasing-Anbieter&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2017 – 2020&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;iPhone-App-Entwicklung (UIKit, Swift)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="muted" style="margin-top:12px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Tipp: Trage bei “App-Links (Linktree)” oben deinen Link ein, dann kann man alles gesammelt anklicken.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="experience" class="grid" aria-label="Werdegang"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Berufliche Laufbahn&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Flynet Flyer Kommunikationsgesellschaft mbH&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2019 – heute · Fachinformatiker AE&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Entwicklung von Softwarelösungen im Kundenauftrag&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;iOS-App-Entwicklung mit Swift&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Backend-Entwicklung mit PHP&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Flynet Flyer Kommunikationsgesellschaft mbH&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2016 – 2019 · Ausbildung (Note 2)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Abschlussprojekt: Mängelmelder-App für iOS (Swift)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;HKS Sicherheitsservice (Nebenjob)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;2016 – 2022&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Überwachung/Betreuung in Flüchtlingswohnheimen&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Service &amp; Sicherheit im Veranstaltungsbereich&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Objektschutz&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card" id="skills"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Skills&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;iOS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;Daily driver&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="muted"&gt;Swift · SwiftUI · UIKit · Xcode · Architekturen (MV/MVVM/MVC) · SPM&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Backend&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;Erweiterter Techstack&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="muted"&gt;PHP · Symfony · SQL · Kotlin (lesen)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Tools&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;Team &amp; Qualität&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="muted"&gt;Git · GitLab · Bitbucket · Jira · Confluence · Sentry&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="title"&gt;Sprachen &amp; Interessen&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="meta"&gt;Kurz&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="muted"&gt;Deutsch · Englisch · Darts · Fußball · Doppelkopf · Gesellschaftsspiele&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" aria-label="Kontakt"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Kontakt&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="muted"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Schreib mir gern — am besten per E-Mail. (Telefon optional.)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="cta" role="list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn primary" href="mailto:hendrik.schneemann@icloud.com" role="listitem"&gt;E-Mail&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="tel:+491774834706" role="listitem"&gt;Anrufen&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Optional: GitHub/LinkedIn --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="#" id="githubLink" rel="noopener" role="listitem"&gt;GitHub&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="#" id="linkedinLink" rel="noopener" role="listitem"&gt;LinkedIn&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="muted" style="margin-top:12px; font-family:var(--mono); font-size:12px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Hinweis: Passe die Links (Linktree/GitHub/LinkedIn) in der Datei an – aktuell sind es Platzhalter.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span&gt;© &lt;span id="year"&gt;&lt;/span&gt; Hendrik Schneemann&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span&gt;Made with HTML/CSS · Hosted on GitHub Pages&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Jahr setzen</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("year").textContent = new Date().getFullYear();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// TODO: Trage hier deine echten Links ein</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const LINKS = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>linktreeOrApps: "https://linktr.ee/hschneemann",</p>
+<p class="p1"><span class="Apple-converted-space">      </span>github: "https://github.com/DEIN-USERNAME",</p>
+<p class="p1"><span class="Apple-converted-space">      </span>linkedin: "https://www.linkedin.com/in/DEIN-PROFIL/"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const appsLink = document.getElementById("appsLink");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const githubLink = document.getElementById("githubLink");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const linkedinLink = document.getElementById("linkedinLink");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (LINKS.linktreeOrApps) appsLink.href = LINKS.linktreeOrApps;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (LINKS.github) githubLink.href = LINKS.github;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (LINKS.linkedin) linkedinLink.href = LINKS.linkedin;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
