@@ -4,17 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Hendrik Schneemann – Fachinformatiker für Anwendungsentwicklung. iOS (Swift/SwiftUI/UIKit), PHP/Symfony, modulare Architekturen, Kotlin Multiplatform-Anbindung.">
+  <meta name="author" content="Hendrik Schneemann">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Hendrik Schneemann · Entwickler">
+  <meta property="og:description" content="iOS- und Backend-Entwicklung mit Fokus auf modulare, wartbare und produktionsnahe Software.">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Hendrik Schneemann · Entwickler">
+  <meta property="twitter:description" content="iOS- und Backend-Entwicklung mit Fokus auf modulare, wartbare und produktionsnahe Software.">
   <title>Hendrik Schneemann · Entwickler</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
   <div class="wrap">
     <header>
       <a class="brand" href="#top" aria-label="Zur Startseite">
         <span class="dot" aria-hidden="true"></span>
         <b>Hendrik Schneemann</b>
       </a>
-      <nav>
+      <nav aria-label="Hauptnavigation">
         <a href="#about">Über mich</a>
         <a href="#projects">Projekte</a>
         <a href="#experience">Werdegang</a>
@@ -23,14 +34,14 @@
       </nav>
     </header>
 
-    <main id="top" class="hero">
+    <main id="main-content" class="hero">
       <div class="card">
         <div class="pad">
           <p class="kicker">
             <span class="pill">Fachinformatiker · Anwendungsentwicklung</span>
             <span class="pill">iOS · SwiftUI · UIKit</span>
           </p>
-          <h1>
+          <h1 id="top">
             Ich baue <span class="hl">performante Apps</span> und saubere Backends -
             modular, wartbar, produktionsnah.
           </h1>
@@ -41,7 +52,7 @@
           <div class="cta">
             <a class="btn primary" href="#projects">Projekte ansehen</a>
             <a class="btn" href="#contact">Kontakt</a>
-            <a class="btn" href="#" id="appsLink" rel="noopener">App-Links (Linktree)</a>
+            <a class="btn" href="#" id="appsLink" rel="noopener noreferrer">App-Links (Linktree)</a>
           </div>
           <div class="mini" aria-label="Schnellinfos">
             <div class="box">
@@ -59,7 +70,7 @@
       <aside class="card">
         <div class="pad">
           <h2>Profil</h2>
-          <p class="muted" style="margin-top:6px">
+          <p class="muted profile-text">
             Ich entwickle Softwarelösungen im Kundenauftrag - von Konzept bis Release. Mir sind
             klare Strukturen, stabile Build-Pipelines und gute Diagnostik (Crash/Logging) wichtig.
           </p>
@@ -77,7 +88,7 @@
             <span class="tag">Jira · Confluence</span>
             <span class="tag">Sentry</span>
           </div>
-          <div class="list" style="margin-top:14px">
+          <div class="list list-spaced">
             <div class="item">
               <div class="top">
                 <div class="title">Highlights</div>
@@ -94,10 +105,10 @@
       </aside>
     </main>
 
-    <section id="about" class="grid" aria-label="Über mich">
+    <section id="about" class="grid" aria-labelledby="about-heading">
       <div class="card">
         <div class="pad">
-          <h2>Über mich</h2>
+          <h2 id="about-heading">Über mich</h2>
           <p class="muted">
             Ich bin Fachinformatiker für Anwendungsentwicklung und arbeite seit 2019 als Entwickler.
             Mein Fokus liegt auf iOS-Apps - von der Konzeption bis zur Umsetzung, gern mit modularer Architektur.
@@ -128,10 +139,10 @@
       </div>
     </section>
 
-    <section id="projects" aria-label="Projekte">
+    <section id="projects" aria-labelledby="projects-heading">
       <div class="card">
         <div class="pad">
-          <h2>Ausgewählte Projekte</h2>
+          <h2 id="projects-heading">Ausgewählte Projekte</h2>
           <p class="muted">Ein paar Stationen aus meinen Projekten (Details/Links kannst du später ergänzen):</p>
           <div class="list">
             <div class="item">
@@ -218,17 +229,17 @@
               </ul>
             </div>
           </div>
-          <p class="muted" style="margin-top:12px">
+          <p class="muted section-hint">
             Tipp: Trage bei "App-Links (Linktree)" oben deinen Link ein, dann kann man alles gesammelt anklicken.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="grid" aria-label="Werdegang">
+    <section id="experience" class="grid" aria-labelledby="experience-heading">
       <div class="card">
         <div class="pad">
-          <h2>Berufliche Laufbahn</h2>
+          <h2 id="experience-heading">Berufliche Laufbahn</h2>
           <div class="list">
             <div class="item">
               <div class="top">
@@ -302,20 +313,20 @@
       </div>
     </section>
 
-    <section id="contact" aria-label="Kontakt">
+    <section id="contact" aria-labelledby="contact-heading">
       <div class="card">
         <div class="pad">
-          <h2>Kontakt</h2>
+          <h2 id="contact-heading">Kontakt</h2>
           <p class="muted">
             Schreib mir gern - am besten per E-Mail. (Telefon optional.)
           </p>
           <div class="cta" role="list">
             <a class="btn primary" href="mailto:hendrik.schneemann@icloud.com" role="listitem">E-Mail</a>
             <a class="btn" href="tel:+491774834706" role="listitem">Anrufen</a>
-            <a class="btn" href="#" id="githubLink" rel="noopener" role="listitem">GitHub</a>
-            <a class="btn" href="#" id="linkedinLink" rel="noopener" role="listitem">LinkedIn</a>
+            <a class="btn" href="#" id="githubLink" rel="noopener noreferrer" role="listitem">GitHub</a>
+            <a class="btn" href="#" id="linkedinLink" rel="noopener noreferrer" role="listitem">LinkedIn</a>
           </div>
-          <p class="muted" style="margin-top:12px; font-family:var(--mono); font-size:12px">
+          <p class="muted section-note">
             Hinweis: Passe die Links (Linktree/GitHub/LinkedIn) in der Datei an - aktuell sind es Platzhalter.
           </p>
         </div>
