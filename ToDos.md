@@ -12,4 +12,4 @@
 - [x] Build-Skript ergänzen, das aus dem Template + Partials die finale `index.html` erzeugt.
 - [x] CSS in Module aufteilen (`base.css`, `layout.css`, `components.css`) und über zentrale `styles.css` bündeln.
 - [x] JavaScript in kleine Module aufteilen (`config`, `year`, `links`) und `main.js` als Einstieg nutzen.
-- [ ] Dokumentation ergänzen (`README.md`) mit Workflow für Änderungen und Build.
+- [x] Dokumentation ergänzen (`README.md`) mit Workflow für Änderungen und Build.
