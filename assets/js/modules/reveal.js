@@ -4,6 +4,8 @@ export function initRevealAnimations() {
     return;
   }
 
+  document.documentElement.classList.add("reveal-ready");
+
   if (!("IntersectionObserver" in window)) {
     nodes.forEach((node) => node.classList.add("is-visible"));
     return;
