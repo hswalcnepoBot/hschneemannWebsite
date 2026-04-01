@@ -25,6 +25,7 @@ Diese Website wird aus einer Template-Datei und HTML-Partials gebaut.
 
 - `index.html` ist das Build-Artefakt für Deployment (z. B. GitHub Pages).
 - Platzhalter-Links in `assets/js/config.js` werden automatisch ausgeblendet, bis echte URLs gesetzt sind.
+- Primärer Git-Remote ist `origin` (`hswalcnepoBot/hschneemannWebsite`), der alte Account bleibt als `legacy` hinterlegt.
 
 ## Contributing
 
