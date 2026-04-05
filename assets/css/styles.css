@@ -1,3 +1,57 @@
-@import url("./base.css");
-@import url("./layout.css");
-@import url("./components.css");
+@layer tokens, base, layout, components, enhancements;
+
+@import url("./base.css") layer(base);
+@import url("./layout.css") layer(layout);
+@import url("./components.css") layer(components);
+
+@layer tokens {
+  :root {
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 2.5rem;
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.5rem;
+  }
+}
+
+@layer enhancements {
+  .hero-shell,
+  .segment-card,
+  .offer-card,
+  .value-card {
+    container-type: inline-size;
+  }
+
+  @container (max-width: 700px) {
+    .hero-main .hero-pad {
+      padding: var(--space-lg);
+    }
+
+    .hero-main .cta {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  @container (max-width: 430px) {
+    .segment-card .pad,
+    .offer-card .pad,
+    .value-card .pad {
+      padding: var(--space-md);
+    }
+
+    .segment-card h3,
+    .offer-card h3,
+    .value-card h3 {
+      font-size: var(--text-lg);
+      line-height: 1.25;
+    }
+  }
+}
