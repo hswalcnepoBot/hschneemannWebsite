@@ -1,0 +1,99 @@
+name: Auto Merge on Approval
+
+on:
+  pull_request_review:
+    types: [submitted]
+  pull_request:
+    types: [ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    # Nur bei approved Reviews und wenn PR ready ist
+    if: |
+      github.event.review.state == 'approved' ||
+      (github.event.pull_request.draft == false && github.event.pull_request.mergeable_state == 'clean')
+
+    steps:
+      - name: Check if PR is approved
+        id: check-approval
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            if (!pr) {
+              console.log('No pull request in context');
+              return false;
+            }
+
+            // Hole alle Reviews
+            const reviews = await github.rest.pulls.listReviews({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number
+            });
+
+            // Prüfe, ob mindestens eine Approval vorhanden ist
+            const approvedReviews = reviews.data.filter(review =>
+              review.state === 'APPROVED'
+            );
+
+            console.log(`Found ${approvedReviews.length} approved reviews`);
+            return approvedReviews.length > 0;
+
+      - name: Check CI status
+        id: check-ci
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            if (!pr) return false;
+
+            // Hole Check-Runs für den PR
+            const checks = await github.rest.checks.listForRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: pr.head.sha
+            });
+
+            // Prüfe, ob alle erforderlichen Checks erfolgreich sind
+            const failedChecks = checks.data.check_runs.filter(check =>
+              check.conclusion === 'failure' || check.conclusion === 'cancelled'
+            );
+
+            console.log(`Found ${failedChecks.length} failed checks`);
+            return failedChecks.length === 0;
+
+      - name: Enable auto-merge
+        if: steps.check-approval.outputs.result == 'true' && steps.check-ci.outputs.result == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            if (!pr) {
+              console.log('No pull request to merge');
+              return;
+            }
+
+            try {
+              // Aktiviere Auto-Merge mit Squash-Strategie
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                merge_method: 'squash',
+                commit_title: `${pr.title} (#${pr.number})`,
+                commit_message: pr.body || ''
+              });
+
+              console.log(`✅ PR #${pr.number} wurde automatisch gemerged`);
+            } catch (error) {
+              console.log(`⚠️  Auto-Merge fehlgeschlagen: ${error.message}`);
+            }
