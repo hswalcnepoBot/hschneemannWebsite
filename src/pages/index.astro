@@ -1,14 +1,35 @@
 ---
-// Temporary placeholder
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import SkillTag from '../components/SkillTag.astro';
 ---
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Hendrik Schneemann · Portfolio</title>
-  </head>
-  <body>
-    <h1>Portfolio Migration in Progress</h1>
-    <p>Astro setup complete.</p>
-  </body>
-</html>
+
+<BaseLayout
+  title="Hendrik Schneemann · Portfolio"
+  description="iOS- und Backend-Entwicklung mit Fokus auf modulare, wartbare und produktionsnahe Software."
+>
+  <Header />
+  <Hero />
+  <main id="main-content">
+    <section id="about" class="container" style="padding: var(--space-2xl) 0;">
+      <h2>Über mich</h2>
+      <p style="margin-bottom: var(--space-md); color: var(--color-text-secondary);">
+        Portfolio-Migration auf Astro ist aktiv.
+      </p>
+      <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+        <SkillTag skill="Swift" category="frontend" />
+        <SkillTag skill="PHP" category="backend" />
+        <SkillTag skill="Git" category="tools" />
+      </div>
+    </section>
+    <section id="projects" class="container" style="padding-bottom: var(--space-2xl);">
+      <h2>Projekte</h2>
+      <p style="color: var(--color-text-secondary);">Projektsektion folgt in den nächsten Tasks.</p>
+    </section>
+    <section id="contact" class="container" style="padding-bottom: var(--space-3xl);">
+      <h2>Kontakt</h2>
+      <p style="color: var(--color-text-secondary);">Kontaktsektion folgt in den nächsten Tasks.</p>
+    </section>
+  </main>
+</BaseLayout>

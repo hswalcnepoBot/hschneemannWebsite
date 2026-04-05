@@ -13,10 +13,14 @@ test('Astro config includes GitHub Pages site setup', async () => {
   assert.match(config, /format:\s*'file'/);
 });
 
-test('placeholder index page is in migration state', async () => {
+test('index page uses BaseLayout with core migration sections', async () => {
   const index = await read('src/pages/index.astro');
-  assert.match(index, /Portfolio Migration in Progress/);
-  assert.match(index, /Astro setup complete\./);
+  assert.match(index, /import BaseLayout from '\.\.\/layouts\/BaseLayout\.astro'/);
+  assert.match(index, /<Header \/>/);
+  assert.match(index, /<Hero \/>/);
+  assert.match(index, /id="about"/);
+  assert.match(index, /id="projects"/);
+  assert.match(index, /id="contact"/);
 });
 
 test('design token and global style files exist with expected core tokens', async () => {
