@@ -1,15 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SkillTag from '../components/SkillTag.astro';
 ---
 
 <BaseLayout
   title="Hendrik Schneemann · Portfolio"
-  description="iOS- und Backend-Entwicklung mit Fokus auf modulare, wartbare und produktionsnahe Software."
+  description="iOS- und Backend-Entwicklung"
 >
   <main id="main-content">
     <div class="container">
-      <h1>Portfolio Migration in Progress</h1>
-      <p>BaseLayout implemented with SEO.</p>
+      <h1>Components Test</h1>
+      <div>
+        <SkillTag skill="Swift" category="frontend" />
+        <SkillTag skill="PHP" category="backend" />
+        <SkillTag skill="Git" category="tools" />
+      </div>
     </div>
   </main>
 </BaseLayout>
