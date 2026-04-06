@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="404 - Seite nicht gefunden"
+  description="Die angeforderte Seite existiert nicht."
+>
+  <div class="error-page">
+    <div class="container">
+      <h1>404</h1>
+      <p>Die Seite, die Sie suchen, existiert leider nicht.</p>
+      <a href="/" class="btn btn-primary">Zur Startseite</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .error-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .error-page h1 {
+    font-size: 8rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-lg);
+  }
+
+  .error-page p {
+    font-size: var(--text-xl);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xl);
+  }
+
+  .btn {
+    padding: var(--space-md) var(--space-lg);
+    background: var(--color-accent);
+    color: var(--color-bg-primary);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+
+  .btn:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-2px);
+  }
+</style>

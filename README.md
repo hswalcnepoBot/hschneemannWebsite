@@ -1,38 +1,55 @@
-# MyWebsite
+# Hendrik Schneemann - Portfolio Website
 
-Diese Website wird aus einer Template-Datei und HTML-Partials gebaut.
+Modern portfolio website built with Astro 4.x.
 
-## Projektstruktur
+## Tech Stack
 
-- `src/index.template.html`: Haupttemplate mit Include-Markern.
-- `src/partials/*.html`: Inhaltliche Bereiche (Header, Hero, Projekte, Kontakt, ...).
-- `scripts/build-html.sh`: Baut aus Template + Partials die finale `index.html`.
-- `assets/css/`: Styles aufgeteilt in `base.css`, `layout.css`, `components.css`.
-- `assets/js/`: JavaScript aufgeteilt in `config.js`, `modules/*.js`, Einstieg über `main.js`.
+- **Framework:** Astro 4.x
+- **Styling:** CSS with Custom Properties (Design Tokens)
+- **Deployment:** GitHub Pages via GitHub Actions
+- **Domain:** hendrikschneemann.tech
 
-## Workflow
-
-1. Inhalte in `src/partials/*.html` oder `src/index.template.html` ändern.
-2. Build ausführen:
+## Development
 
 ```bash
-./scripts/build-html.sh
+# Install dependencies
+npm install
+
+# Start dev server (localhost:4321)
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-3. Änderungen in der generierten `index.html` prüfen und committen.
+## Project Structure
 
-## Hinweise
+```
+src/
+├── pages/          # Routes (index.astro, 404.astro)
+├── layouts/        # Page layouts (BaseLayout.astro)
+├── components/     # UI components
+├── styles/         # Global styles and design tokens
+public/             # Static assets (images, fonts, CNAME)
+```
 
-- `index.html` ist das Build-Artefakt für Deployment (z. B. GitHub Pages).
-- Platzhalter-Links in `assets/js/config.js` werden automatisch ausgeblendet, bis echte URLs gesetzt sind.
-- Primärer Git-Remote ist `origin` (`hswalcnepoBot/hschneemannWebsite`), der alte Account bleibt als `legacy` hinterlegt.
+## Deployment
 
-## Contributing
+Automatically deployed to GitHub Pages on push to `main` branch via GitHub Actions.
 
-Für den vollständigen Git-Workflow und Contribution-Prozess siehe [CONTRIBUTING.md](CONTRIBUTING.md).
+## Design System
 
-**Kurzfassung:**
-1. Feature-Branch erstellen
-2. Änderungen vornehmen und builden
-3. Pull Request erstellen
-4. Nach erfolgreichem Review wird automatisch in `main` gemerged
+- **Colors:** Dark theme with blue accents
+- **Typography:** Inter (body), Space Grotesk (headings)
+- **Spacing:** 8px grid system
+- **Responsive:** Mobile-first design
+
+## SEO
+
+- Comprehensive meta tags (Open Graph, Twitter Cards)
+- Structured data (JSON-LD)
+- Sitemap and robots.txt
+- Performance optimized (minimal JavaScript)
