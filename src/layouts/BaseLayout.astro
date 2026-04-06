@@ -1,0 +1,78 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Hendrik Schneemann" />
+    <meta name="theme-color" content="#0f1419" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL('/images/social-preview.png', Astro.site)} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL('/images/social-preview.png', Astro.site)} />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/design-tokens.css" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Hendrik Schneemann",
+          "url": "https://hendrikschneemann.tech/",
+          "jobTitle": "Fachinformatiker für Anwendungsentwicklung",
+          "sameAs": [
+            "https://github.com/hsnowmansch",
+            "https://www.linkedin.com/in/hschneemann/"
+          ],
+          "email": "mailto:hendrik.schneemann@icloud.com"
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "Hendrik Schneemann Development Services",
+          "url": "https://hendrikschneemann.tech/",
+          "description": "iOS- und Backend-Entwicklung mit Fokus auf modulare, wartbare und produktionsnahe Software.",
+          "areaServed": "DE",
+          "provider": {
+            "@type": "Person",
+            "name": "Hendrik Schneemann"
+          }
+        }
+      ]
+    })} />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+    <slot />
+  </body>
+</html>
