@@ -1,0 +1,107 @@
+---
+// Contact section component
+---
+
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2>Kontakt</h2>
+    <p class="section-intro">
+      Lassen Sie uns gemeinsam an Ihrem nächsten Projekt arbeiten
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>E-Mail</h3>
+          <a href="mailto:hendrik.schneemann@icloud.com">
+            hendrik.schneemann@icloud.com
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <h3>Social Media</h3>
+          <div class="social-links">
+            <a href="https://github.com/hsnowmansch" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/hschneemann/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-placeholder">
+        <p>Kontaktformular wird in zukünftiger Version hinzugefügt</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-section {
+    padding: var(--space-3xl) 0;
+    background: var(--color-bg-secondary);
+  }
+
+  .contact-section h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .section-intro {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xl);
+    font-size: var(--text-lg);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .contact-item {
+    margin-bottom: var(--space-lg);
+  }
+
+  .contact-item h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-sm);
+    color: var(--color-accent);
+  }
+
+  .contact-item a {
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+  }
+
+  .social-links {
+    display: flex;
+    gap: var(--space-md);
+  }
+
+  .contact-form-placeholder {
+    padding: var(--space-xl);
+    background: var(--color-bg-accent);
+    border-radius: var(--radius-lg);
+    border: 1px dashed var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-form-placeholder p {
+    color: var(--color-text-secondary);
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: var(--space-2xl) 0;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
