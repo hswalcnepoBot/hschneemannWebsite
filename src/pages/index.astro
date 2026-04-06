@@ -2,17 +2,22 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import AboutSection from '../components/AboutSection.astro';
+import ProjectsSection from '../components/ProjectsSection.astro';
+import ContactSection from '../components/ContactSection.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout
-  title="Hendrik Schneemann · Portfolio"
-  description="iOS- und Backend-Entwicklung"
+  title="Hendrik Schneemann · Entwickler"
+  description="iOS- und Backend-Entwicklung mit Fokus auf modulare, wartbare und produktionsnahe Software."
 >
   <Header />
   <Hero />
   <main id="main-content">
-    <div class="container">
-      <p style="height: 100vh;">Content placeholder</p>
-    </div>
+    <AboutSection />
+    <ProjectsSection />
+    <ContactSection />
   </main>
+  <Footer />
 </BaseLayout>
