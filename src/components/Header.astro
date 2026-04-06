@@ -1,0 +1,73 @@
+---
+// Header navigation component
+---
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <a href="#top" class="brand">
+        <strong>Hendrik Schneemann</strong>
+      </a>
+
+      <nav class="nav-menu" aria-label="Hauptnavigation">
+        <a href="#about">Über mich</a>
+        <a href="#projects">Projekte</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(15, 20, 25, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) 0;
+  }
+
+  .brand {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: var(--space-lg);
+  }
+
+  .nav-menu a {
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    transition: color 0.2s ease;
+  }
+
+  .nav-menu a:hover {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 768px) {
+    .header-content {
+      padding: var(--space-sm) 0;
+    }
+
+    .nav-menu {
+      gap: var(--space-md);
+    }
+
+    .nav-menu a {
+      font-size: var(--text-sm);
+    }
+  }
+</style>

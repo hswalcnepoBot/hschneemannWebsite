@@ -1,20 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SkillTag from '../components/SkillTag.astro';
+import Header from '../components/Header.astro';
 ---
 
 <BaseLayout
   title="Hendrik Schneemann · Portfolio"
   description="iOS- und Backend-Entwicklung"
 >
+  <Header />
   <main id="main-content">
     <div class="container">
-      <h1>Components Test</h1>
-      <div>
-        <SkillTag skill="Swift" category="frontend" />
-        <SkillTag skill="PHP" category="backend" />
-        <SkillTag skill="Git" category="tools" />
-      </div>
+      <h1 id="top">Header Component Test</h1>
+      <p style="height: 200vh;">Scroll to test sticky header</p>
     </div>
   </main>
 </BaseLayout>
