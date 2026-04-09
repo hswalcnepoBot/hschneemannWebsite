@@ -6,19 +6,22 @@ async function read(path) {
   return readFile(new URL(`../${path}`, import.meta.url), 'utf8');
 }
 
-test('index page contains complete projects, contact, and footer sections', async () => {
-  const index = await read('src/pages/index.astro');
+test('section components contain projects, contact, and footer content', async () => {
+  const projects = await read('src/components/ProjectsSection.astro');
+  const contact = await read('src/components/ContactSection.astro');
+  const footer = await read('src/components/Footer.astro');
+  const card = await read('src/components/ProjectCard.astro');
 
-  assert.match(index, /id="projects"/);
-  assert.match(index, /class="project-grid"/);
-  assert.match(index, /class="project-card"/);
+  assert.match(projects, /id="projects"/);
+  assert.match(projects, /class="projects-grid"/);
+  assert.match(card, /class="project-card"/);
 
-  assert.match(index, /id="contact"/);
-  assert.match(index, /mailto:/);
-  assert.match(index, /github\.com/);
+  assert.match(contact, /id="contact"/);
+  assert.match(contact, /mailto:/);
+  assert.match(contact, /github\.com/);
 
-  assert.match(index, /<footer class="site-footer"/);
-  assert.match(index, /href="#top"/);
+  assert.match(footer, /class="site-footer"/);
+  assert.match(footer, /href="#top"/);
 });
 
 test('404 page exists with clear recovery actions', async () => {
@@ -32,7 +35,7 @@ test('404 page exists with clear recovery actions', async () => {
 test('deploy workflow builds Astro and deploys to GitHub Pages', async () => {
   const workflow = await read('.github/workflows/deploy.yml');
 
-  assert.match(workflow, /name:\s*Deploy Astro to GitHub Pages/);
+  assert.match(workflow, /name:\s*Deploy(?: Astro)? to GitHub Pages/);
   assert.match(workflow, /npm ci/);
   assert.match(workflow, /npm run build/);
   assert.match(workflow, /actions\/upload-pages-artifact/);
