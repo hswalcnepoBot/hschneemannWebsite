@@ -1,0 +1,84 @@
+---
+import SkillTag from './SkillTag.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  technologies: string[];
+  link?: string;
+  github?: string;
+}
+
+const { title, description, technologies, link, github } = Astro.props;
+---
+
+<article class="project-card">
+  <h3>{title}</h3>
+  <p class="project-description">{description}</p>
+
+  <div class="project-tech">
+    {technologies.map((tech) => <SkillTag skill={tech} />)}
+  </div>
+
+  <div class="project-links">
+    {link && (
+      <a href={link} target="_blank" rel="noopener noreferrer" class="project-link">
+        Live Demo →
+      </a>
+    )}
+    {github && (
+      <a href={github} target="_blank" rel="noopener noreferrer" class="project-link">
+        GitHub →
+      </a>
+    )}
+  </div>
+</article>
+
+<style>
+  .project-card {
+    padding: var(--space-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+  }
+
+  .project-card h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-primary);
+  }
+
+  .project-description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+  }
+
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
+  }
+
+  .project-links {
+    display: flex;
+    gap: var(--space-md);
+  }
+
+  .project-link {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+
+  .project-link:hover {
+    color: var(--color-accent-hover);
+  }
+</style>

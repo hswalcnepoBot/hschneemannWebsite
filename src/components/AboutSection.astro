@@ -1,0 +1,71 @@
+---
+import SkillTag from './SkillTag.astro';
+---
+
+<section class="about-section" id="about">
+  <div class="container">
+    <h2>Über mich</h2>
+    <div class="about-content">
+      <p>
+        Als Fachinformatiker für Anwendungsentwicklung entwickle ich seit mehreren Jahren
+        iOS-Apps und Backend-Systeme. Mein Fokus liegt auf sauberer Architektur,
+        wartbarem Code und hervorragender User Experience.
+      </p>
+      <p>
+        Ich spezialisiere mich auf moderne Swift-Entwicklung mit SwiftUI und
+        Backend-Entwicklung mit PHP/Symfony. Dabei lege ich besonderen Wert auf
+        modulare, testbare und produktionsnahe Software.
+      </p>
+    </div>
+
+    <h3>Technologien & Skills</h3>
+    <div class="skills-grid">
+      <SkillTag skill="Swift" category="frontend" />
+      <SkillTag skill="SwiftUI" category="frontend" />
+      <SkillTag skill="PHP" category="backend" />
+      <SkillTag skill="Symfony" category="backend" />
+      <SkillTag skill="Git" category="tools" />
+      <SkillTag skill="Docker" category="tools" />
+      <SkillTag skill="REST APIs" category="backend" />
+      <SkillTag skill="MySQL" category="backend" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    padding: var(--space-3xl) 0;
+    background: var(--color-bg-secondary);
+  }
+
+  .about-section h2 {
+    margin-bottom: var(--space-lg);
+  }
+
+  .about-content {
+    margin-bottom: var(--space-xl);
+  }
+
+  .about-content p {
+    margin-bottom: var(--space-md);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+  }
+
+  .about-section h3 {
+    margin-bottom: var(--space-md);
+    color: var(--color-accent);
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      padding: var(--space-2xl) 0;
+    }
+  }
+</style>

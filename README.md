@@ -1,29 +1,55 @@
-# MyWebsite
+# Hendrik Schneemann - Portfolio Website
 
-Persoenliche Website auf Basis von Astro.
+Modern portfolio website built with Astro 4.x.
 
-## Workflow
+## Tech Stack
+
+- **Framework:** Astro 4.x
+- **Styling:** CSS with Custom Properties (Design Tokens)
+- **Deployment:** GitHub Pages via GitHub Actions
+- **Domain:** hendrikschneemann.tech
+
+## Development
 
 ```bash
+# Install dependencies
 npm install
+
+# Start dev server (localhost:4321)
 npm run dev
+
+# Build for production
 npm run build
+
+# Preview production build
 npm run preview
 ```
 
-- `npm install` installiert die Abhaengigkeiten.
-- `npm run dev` startet den lokalen Astro-Entwicklungsserver.
-- `npm run build` erstellt das Produktions-Build.
-- `npm run preview` prueft das Build lokal.
+## Project Structure
 
-## Projektstruktur
-
-- `src/pages/` fuer Routen und Seiten wie `index.astro` und `404.astro`.
-- `src/layouts/` fuer wiederverwendbare Seitenlayouts.
-- `src/components/` fuer wiederverwendbare UI-Bausteine.
-- `src/styles/` fuer globale Styles und Design-Tokens.
-- `public/` fuer statische Dateien wie `CNAME`.
+```
+src/
+├── pages/          # Routes (index.astro, 404.astro)
+├── layouts/        # Page layouts (BaseLayout.astro)
+├── components/     # UI components
+├── styles/         # Global styles and design tokens
+public/             # Static assets (images, fonts, CNAME)
+```
 
 ## Deployment
 
-Das Deployment laeuft ueber GitHub Actions und nutzt das Astro-Build als Grundlage fuer das Hosting.
+Automatically deployed to GitHub Pages on push to `main` branch via GitHub Actions.
+
+## Design System
+
+- **Colors:** Dark theme with blue accents
+- **Typography:** Inter (body), Space Grotesk (headings)
+- **Spacing:** 8px grid system
+- **Responsive:** Mobile-first design
+
+## SEO
+
+- Comprehensive meta tags (Open Graph, Twitter Cards)
+- Structured data (JSON-LD)
+- Sitemap and robots.txt
+- Performance optimized (minimal JavaScript)

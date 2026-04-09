@@ -1,0 +1,65 @@
+---
+import ProjectCard from './ProjectCard.astro';
+---
+
+<section class="projects-section" id="projects">
+  <div class="container">
+    <h2>Projekte</h2>
+    <p class="section-intro">
+      Eine Auswahl meiner aktuellen und vergangenen Projekte
+    </p>
+
+    <div class="projects-grid">
+      <ProjectCard
+        title="iOS App Development"
+        description="Entwicklung moderner iOS-Anwendungen mit SwiftUI und Combine"
+        technologies={['Swift', 'SwiftUI', 'Combine']}
+      />
+
+      <ProjectCard
+        title="Backend API Services"
+        description="RESTful APIs mit PHP/Symfony und MySQL"
+        technologies={['PHP', 'Symfony', 'MySQL', 'REST']}
+      />
+
+      <ProjectCard
+        title="DevOps & Automation"
+        description="Container-basierte Deployments und CI/CD-Pipelines"
+        technologies={['Docker', 'Git', 'GitHub Actions']}
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects-section {
+    padding: var(--space-3xl) 0;
+    background: var(--color-bg-primary);
+  }
+
+  .projects-section h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .section-intro {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xl);
+    font-size: var(--text-lg);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+  }
+
+  @media (max-width: 768px) {
+    .projects-section {
+      padding: var(--space-2xl) 0;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,37 +1,47 @@
-# OS
-.DS_Store
-Thumbs.db
+# build output
+dist/
+# generated types
+.astro/
 
-# Logs
-*.log
+# dependencies
+node_modules/
+
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.log
 
-# Dependencies
-node_modules/
 
-# Build output
-dist/
-build/
+# environment variables
+.env*
+!.env.example
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/
+
+# vscode setting folder
+.vscode/
+
+# git worktrees
+.worktrees/
+
+# test coverage
 coverage/
 .astro/
 
-# Environment variables
-.env
-.env.*
-!.env.example
-
-# Editor/IDE
-.vscode/
-.idea/
+# vim swap files
 *.swp
 *.swo
 
-# Cache
+# cache directories
 .cache/
 .parcel-cache/
 
-# Git worktrees
-.worktrees/
+# Windows-specific files
+Thumbs.db

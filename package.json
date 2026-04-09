@@ -1,5 +1,5 @@
 {
-  "name": "mywebsite",
+  "name": "astro-init",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -9,10 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "test": "node --test"
+    "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.19"
+    "astro": "^4.0.0"
   }
 }
