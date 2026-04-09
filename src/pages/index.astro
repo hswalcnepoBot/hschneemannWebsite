@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import SkillTag from '../components/SkillTag.astro';
+---
+
+<BaseLayout
+  title="Hendrik Schneemann · Portfolio"
+  description="iOS- und Backend-Entwicklung mit Fokus auf modulare, wartbare und produktionsnahe Software."
+>
+  <Header />
+  <Hero />
+  <main id="main-content">
+    <section id="about" class="container section">
+      <h2>Über mich</h2>
+      <p class="section-intro">
+        Ich unterstütze Teams bei der Entwicklung robuster iOS- und Backend-Lösungen,
+        von der Architektur bis zur produktionsreifen Umsetzung.
+      </p>
+      <div class="skills-row">
+        <SkillTag skill="Swift" category="frontend" />
+        <SkillTag skill="SwiftUI" category="frontend" />
+        <SkillTag skill="PHP" category="backend" />
+        <SkillTag skill="Symfony" category="backend" />
+        <SkillTag skill="Git" category="tools" />
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Projekte</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Automatisierte CI/CD-Optimierung</h3>
+          <p>Optimierung von Build- und Release-Prozessen mit reproduzierbaren Pipelines.</p>
+        </article>
+        <article class="project-card">
+          <h3>SwiftUI Produkt-App</h3>
+          <p>Konzeption und Umsetzung einer modularen App mit Fokus auf Wartbarkeit und Performance.</p>
+        </article>
+        <article class="project-card">
+          <h3>Backend-Service mit Symfony</h3>
+          <p>Entwicklung APIs für sichere Datenverarbeitung und klare Service-Grenzen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Kontakt</h2>
+      <p class="section-intro">Für Projekte, Zusammenarbeit oder Rückfragen gerne direkt melden.</p>
+      <div class="contact-links">
+        <a href="mailto:hendrik.schneemann@icloud.com">hendrik.schneemann@icloud.com</a>
+        <a href="https://github.com/hsnowmansch" rel="noopener noreferrer" target="_blank">github.com/hsnowmansch</a>
+        <a href="https://www.linkedin.com/in/hschneemann/" rel="noopener noreferrer" target="_blank">linkedin.com/in/hschneemann</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© {new Date().getFullYear()} Hendrik Schneemann</p>
+      <a href="#top">Zurück nach oben</a>
+    </div>
+  </footer>
+</BaseLayout>
+
+<style>
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .section-intro {
+    margin-bottom: var(--space-md);
+    color: var(--color-text-secondary);
+  }
+
+  .skills-row {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+  }
+
+  .project-grid {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: var(--space-md);
+  }
+
+  .project-card {
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+  }
+
+  .project-card p {
+    color: var(--color-text-secondary);
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-md);
+    align-items: center;
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
