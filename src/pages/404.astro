@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404 · Seite nicht gefunden" description="Die angeforderte Seite wurde nicht gefunden.">
+  <main id="main-content" class="not-found">
+    <div class="container not-found-content">
+      <p class="status-code">404</p>
+      <h1>Seite nicht gefunden</h1>
+      <p>Die angeforderte Seite existiert nicht oder wurde verschoben.</p>
+      <a href="/">Zur Startseite</a>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .not-found {
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+  }
+
+  .not-found-content {
+    text-align: center;
+  }
+
+  .status-code {
+    color: var(--color-accent);
+    font-size: var(--text-4xl);
+    font-weight: 700;
+  }
+</style>
