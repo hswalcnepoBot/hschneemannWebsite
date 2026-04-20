@@ -12,27 +12,31 @@
     <div class="contact-grid">
       <div class="contact-info">
         <div class="contact-item">
-          <h3>E-Mail</h3>
-          <a href="mailto:hendrik.schneemann@icloud.com">
+          <h3 class="contact-label">E-Mail</h3>
+          <a href="mailto:hendrik.schneemann@icloud.com" class="contact-link">
             hendrik.schneemann@icloud.com
           </a>
         </div>
 
         <div class="contact-item">
-          <h3>Social Media</h3>
+          <h3 class="contact-label">Social Media</h3>
           <div class="social-links">
-            <a href="https://github.com/hsnowmansch" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/hsnowmansch" target="_blank" rel="noopener noreferrer" class="social-link">
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/hschneemann/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/hschneemann/" target="_blank" rel="noopener noreferrer" class="social-link">
               LinkedIn
             </a>
           </div>
         </div>
       </div>
 
-      <div class="contact-form-placeholder">
-        <p>Kontaktformular wird in zukünftiger Version hinzugefügt</p>
+      <div class="availability-card">
+        <div class="availability-indicator"></div>
+        <p class="availability-title">Verfügbar für neue Projekte</p>
+        <p class="availability-text">
+          Offen für spannende iOS- und Backend-Projekte sowie langfristige Zusammenarbeit.
+        </p>
       </div>
     </div>
   </div>
@@ -41,38 +45,42 @@
 <style>
   .contact-section {
     padding: var(--space-3xl) 0;
-    background: var(--color-bg-secondary);
+    background: var(--color-bg-primary);
   }
 
   .contact-section h2 {
     margin-bottom: var(--space-md);
   }
 
-  .section-intro {
-    color: var(--color-text-secondary);
-    margin-bottom: var(--space-xl);
-    font-size: var(--text-lg);
-  }
-
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-2xl);
+    align-items: start;
   }
 
   .contact-item {
     margin-bottom: var(--space-lg);
   }
 
-  .contact-item h3 {
-    font-size: var(--text-lg);
-    margin-bottom: var(--space-sm);
-    color: var(--color-accent);
+  .contact-label {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    font-family: var(--font-code);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: var(--space-xs);
   }
 
-  .contact-item a {
+  .contact-link {
     font-size: var(--text-base);
     color: var(--color-text-primary);
+    transition: color var(--transition-base);
+  }
+
+  .contact-link:hover {
+    color: var(--color-accent);
   }
 
   .social-links {
@@ -80,19 +88,46 @@
     gap: var(--space-md);
   }
 
-  .contact-form-placeholder {
-    padding: var(--space-xl);
-    background: var(--color-bg-accent);
-    border-radius: var(--radius-lg);
-    border: 1px dashed var(--color-border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .social-link {
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    color: var(--color-accent);
+    transition: color var(--transition-base);
   }
 
-  .contact-form-placeholder p {
+  .social-link:hover {
+    color: var(--color-accent-hover);
+  }
+
+  /* Availability card */
+  .availability-card {
+    padding: var(--space-xl);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-success-subtle);
+    border-radius: var(--radius-lg);
+    position: relative;
+  }
+
+  .availability-indicator {
+    width: 10px;
+    height: 10px;
+    background: var(--color-success);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-md);
+    box-shadow: 0 0 8px var(--color-success);
+  }
+
+  .availability-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--color-success);
+    margin-bottom: var(--space-sm);
+  }
+
+  .availability-text {
     color: var(--color-text-secondary);
-    font-style: italic;
+    line-height: var(--leading-relaxed);
+    font-size: var(--text-base);
   }
 
   @media (max-width: 768px) {

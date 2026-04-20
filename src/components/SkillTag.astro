@@ -1,7 +1,7 @@
 ---
 interface Props {
   skill: string;
-  category?: string;
+  category?: 'frontend' | 'backend' | 'tools';
 }
 
 const { skill, category } = Astro.props;
@@ -15,18 +15,53 @@ const { skill, category } = Astro.props;
   .skill-tag {
     display: inline-block;
     padding: var(--space-xs) var(--space-sm);
-    background: var(--color-bg-secondary);
-    color: var(--color-text-primary);
+    background: var(--color-bg-accent);
+    color: var(--color-text-secondary);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-full);
     font-size: var(--text-sm);
-    font-weight: 500;
-    transition: all 0.2s ease;
+    font-weight: var(--font-medium);
+    transition: all var(--transition-base);
   }
 
   .skill-tag:hover {
-    background: var(--color-bg-accent);
+    background: var(--color-bg-secondary);
     border-color: var(--color-accent);
+    color: var(--color-text-primary);
     transform: translateY(-2px);
+  }
+
+  /* Category variants */
+  .skill-tag[data-category="frontend"] {
+    color: var(--color-skill-frontend);
+    background: var(--color-skill-frontend-bg);
+    border-color: var(--color-skill-frontend-border);
+  }
+
+  .skill-tag[data-category="frontend"]:hover {
+    background: var(--color-skill-frontend-bg);
+    border-color: var(--color-skill-frontend);
+  }
+
+  .skill-tag[data-category="backend"] {
+    color: var(--color-skill-backend);
+    background: var(--color-skill-backend-bg);
+    border-color: var(--color-skill-backend-border);
+  }
+
+  .skill-tag[data-category="backend"]:hover {
+    background: var(--color-skill-backend-bg);
+    border-color: var(--color-skill-backend);
+  }
+
+  .skill-tag[data-category="tools"] {
+    color: var(--color-skill-tools);
+    background: var(--color-skill-tools-bg);
+    border-color: var(--color-skill-tools-border);
+  }
+
+  .skill-tag[data-category="tools"]:hover {
+    background: var(--color-skill-tools-bg);
+    border-color: var(--color-skill-tools);
   }
 </style>

@@ -31,15 +31,15 @@ const currentYear = new Date().getFullYear();
   }
 
   .copyright {
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
     font-size: var(--text-sm);
   }
 
   .back-to-top {
-    color: var(--color-accent);
-    font-weight: 600;
+    font-weight: var(--font-semibold);
     font-size: var(--text-sm);
-    transition: all 0.2s ease;
+    color: var(--color-accent);
+    transition: all var(--transition-base);
   }
 
   .back-to-top:hover {
