@@ -1,4 +1,7 @@
 ---
+import '../styles/design-tokens.css';
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description: string;
@@ -35,10 +38,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="/src/styles/design-tokens.css" />
-    <link rel="stylesheet" href="/src/styles/global.css" />
 
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify({
